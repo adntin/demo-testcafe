@@ -1,0 +1,35 @@
+{
+  "startTime": "2018-08-27T05:54:50.291Z",
+  "endTime": "2018-08-27T05:58:13.689Z",
+  "userAgents": [
+    "Firefox 61.0.0 / Mac OS X 10.12.0",
+    "Chrome 68.0.3440 / Mac OS X 10.12.5",
+    "Safari 10.1.1 / Mac OS X 10.12.5"
+  ],
+  "passed": 0,
+  "total": 1,
+  "skipped": 0,
+  "fixtures": [
+    {
+      "name": "Getting Started",
+      "path": "/Users/devin.lin/Desktop/demo/testcafe/index.js",
+      "tests": [
+        {
+          "name": "My first test",
+          "errs": [
+            "Cannot obtain information about the node because the specified selector does not match any node in the DOM tree.\n\nBrowser: Chrome 68.0.3440 / Mac OS X 10.12.5\n\n    7 |  await t\n    8 |    .typeText('#developer-name', 'John Smith')\n    9 |    .click('#submit-button')\n   10 |\n   11 |    // Use the assertion to check if the actual header text is equal to the expected one\n > 12 |    .expect(Selector('#article-header').innerText).eql('Thank you, John Smith!');\n   13 |});\n\n   at eql (/Users/devin.lin/Desktop/demo/testcafe/index.js:12:52)\n   at test (/Users/devin.lin/Desktop/demo/testcafe/index.js:6:1)",
+            "Error on page \"http://devexpress.github.io/testcafe/example/thank-you.html\":\n\nUncaught ReferenceError: $ is not defined\n\nBrowser: Chrome 68.0.3440 / Mac OS X 10.12.5",
+            "Cannot obtain information about the node because the specified selector does not match any node in the DOM tree.\n\nBrowser: Firefox 61.0.0 / Mac OS X 10.12.0\n\n    7 |  await t\n    8 |    .typeText('#developer-name', 'John Smith')\n    9 |    .click('#submit-button')\n   10 |\n   11 |    // Use the assertion to check if the actual header text is equal to the expected one\n > 12 |    .expect(Selector('#article-header').innerText).eql('Thank you, John Smith!');\n   13 |});\n\n   at eql (/Users/devin.lin/Desktop/demo/testcafe/index.js:12:52)\n   at test (/Users/devin.lin/Desktop/demo/testcafe/index.js:6:1)",
+            "Error on page \"http://devexpress.github.io/testcafe/example/thank-you.html\":\n\nReferenceError: $ is not defined\n\nBrowser: Firefox 61.0.0 / Mac OS X 10.12.0",
+            "Cannot obtain information about the node because the specified selector does not match any node in the DOM tree.\n\nBrowser: Safari 10.1.1 / Mac OS X 10.12.5\n\n    7 |  await t\n    8 |    .typeText('#developer-name', 'John Smith')\n    9 |    .click('#submit-button')\n   10 |\n   11 |    // Use the assertion to check if the actual header text is equal to the expected one\n > 12 |    .expect(Selector('#article-header').innerText).eql('Thank you, John Smith!');\n   13 |});\n\n   at eql (/Users/devin.lin/Desktop/demo/testcafe/index.js:12:52)\n   at test (/Users/devin.lin/Desktop/demo/testcafe/index.js:6:1)",
+            "Error on page \"http://devexpress.github.io/testcafe/example/thank-you.html\":\n\nReferenceError: Can't find variable: $\n\nBrowser: Safari 10.1.1 / Mac OS X 10.12.5"
+          ],
+          "durationMs": 203376,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}
